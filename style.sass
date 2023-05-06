@@ -12,14 +12,17 @@
     width: 250px
     min-height: 200px
     border: 1px solid black
+    border-radius: 10px
     &:hover
         box-shadow: 10px 10px 20px 15px rgba(0, 0, 0, 0.15)
         transition: 1s
 
 
 .deleteItem
-    margin-left: 10px
-    color: #d62a2a    
+    display: none
+    margin-right: 10px
+    color: #142041
+    float: right   
 
 
 
@@ -29,11 +32,17 @@
 
 
 .shoppingListInput
-    margin-left: 45px
+    margin-left: 35px
+    height: 20px
 
 
 li
-    font-size: 20px        
+    font-size: 22px
+    &:hover
+        .deleteItem
+           display: block 
+           transition: 0.5s
+            
 
 h2
     margin-left: 45px   

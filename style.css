@@ -10,6 +10,7 @@
   width: 250px;
   min-height: 200px;
   border: 1px solid black;
+  border-radius: 10px;
 }
 .shoppingList:hover {
   box-shadow: 10px 10px 20px 15px rgba(0, 0, 0, 0.15);
@@ -17,8 +18,10 @@
 }
 
 .deleteItem {
-  margin-left: 10px;
-  color: #d62a2a;
+  display: none;
+  margin-right: 10px;
+  color: #142041;
+  float: right;
 }
 
 .done {
@@ -27,11 +30,16 @@
 }
 
 .shoppingListInput {
-  margin-left: 45px;
+  margin-left: 35px;
+  height: 20px;
 }
 
 li {
-  font-size: 20px;
+  font-size: 22px;
+}
+li:hover .deleteItem {
+  display: block;
+  transition: 0.5s;
 }
 
 h2 {
